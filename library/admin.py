@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import IC_SENSOR,IC_RF,MECHANICAL,INTERFACE_LOGIC,IC_MEMORY,IC_CLASS_A,ANALOG_POWER,PASSIVE,CLOCK_TIMING,CONNECTOR,DISCRETE_ANALOG,ELECTRO_MECHANICAL
+from .models import *
 # Register your models here.
 
 admin.site.register(PASSIVE)

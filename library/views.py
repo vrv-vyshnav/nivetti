@@ -15,8 +15,7 @@ def index(request):
     })
 
 def profile_view(request):
-    profiles = Detail.objects.raw('SELECT * FROM Details WHERE name = "A*" ')
     
     return render(request, 'library/profile.html', {
-        'profiles' : profiles,
+
     })
