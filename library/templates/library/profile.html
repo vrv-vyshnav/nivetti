@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User profiles</title>
+</head>
+<style>
+    .container{
+        width: 200px;
+        height: 50vh;
+        background-color: red;
+        color: white;
+    }
+</style>
+<body>
+    <h1>Profiles</h1>
+    <div class="container">
+        {% for profile in profiles %}
+            
+                {{ profile.name }} <br>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
