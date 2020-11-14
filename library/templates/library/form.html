@@ -6,10 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}  
-        <input type="submit" name="" id="">
-    </form>
+    <div class="addlib">
+          <form action="" method="POST">
+              {% csrf_token %}
+              {{ form.as_p }}  
+              <input type="submit" name="" id="">
+         </form>
+    </div>
+    <div class="searchlib">
+        <form action="">
+            <select>
+                <option id="passive">passive</option>
+                <option id="clock_Timing">clock_Timing</option>
+                <option id="CONNECTOR">CONNECTOR</option>
+                <option id="DISCRETE_ANALOG">DISCRETE_ANALOG</option>
+                <option id="ELECTRO_MECHANICAL">ELECTRO_MECHANICAL</option>
+                <option id="ANALOG_POWER">ANALOG_POWER</option>
+                <option id="IC_CLASS_A">IC_CLASS_A</option>
+                <option id="IC_MEMORY">IC_MEMORY</option>
+                <option id="INTERFACE_LOGIC">INTERFACE_LOGIC</option>
+                <option id="MECHANICAL">MECHANICAL</option>
+                <option id="IC_RF">IC_RF</option>
+                <option id="IC_SENSOR">IC_SENSOR</option>
+            </select>
+            <input type="text" name="search">
+            <input type="submit">
+        </form>
+    </div>
+    {% if search_result%}
+    {{ search_result}} 
+    {%endif%}
 </body>
 </html>
+
